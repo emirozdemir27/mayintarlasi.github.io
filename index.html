@@ -3,16 +3,17 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Babangi Merkezi</title>
+  <title>Babangi Oyun Merkezi</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      overflow-y: scroll;
       font-family: 'Share Tech Mono', monospace;
+      scroll-behavior: smooth;
     }
-
+    
     #particles-js {
       position: fixed;
       width: 100%;
@@ -20,7 +21,9 @@
       background: #10022b; /* zemin siyah */
       z-index: -1;
     }
-
+    ::-webkit-scrollbar {
+    width: 0px;
+    }
     .content {
       position: relative;
       z-index: 10;
@@ -47,8 +50,8 @@
     }
 
     iframe {
-      width: 80%;
-      height: 600px;
+      width: 90%;
+      height: 700px;
       border-radius: 10px;
       border: none;
       margin-top: 20px;
@@ -66,7 +69,7 @@
     <h1>BABANGİ UZAY MERKEZİ</h1>
     <div class="button-container">
       <button onclick="loadGame('mayintarlasi.html')">🧨 Mayın Tarlası</button>
-      <button onclick="loadGame('oyun2.html')">🎮 Oyun 2</button>
+      <button onclick="loadGame('bird.html')">🐔 Birdo</button>
       <button onclick="loadGame('oyun3.html')">🕹️ Oyun 3</button>
     </div>
 
